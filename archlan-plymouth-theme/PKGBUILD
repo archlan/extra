@@ -1,0 +1,23 @@
+# Maintainer: Lanhild <archlan@protonmail.com>
+
+pkgname=archlan-plymouth-theme
+pkgver=1.0
+pkgrel=1
+pkgdesc="Default plymouth theme for ArchLan"
+url="https://github.com/archlan/extra"
+arch=('any')
+license=('GPL3')
+makedepends=()
+depends=('plymouth')
+conflicts=()
+groups=(archlan-plymouth-themes)
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+prepare() {
+	cp -af ../files/. ${srcdir}
+}
+
+package() {
+	(find archlan -type f -exec install -Dm 644 "{}" "$pkgdir/usr/share/plymouth/themes/{}" \;)
+}

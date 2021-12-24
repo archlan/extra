@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=archlan
+Description=default plymouth theme for archlan
+Comment=Created By Lanhild (@Lanhild)
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/archlan
+ScriptFile=/usr/share/plymouth/themes/archlan/archlan.script

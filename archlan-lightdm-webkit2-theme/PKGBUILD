@@ -1,0 +1,23 @@
+# Maintainer: Lanhild <archlan@protonmail.com>
+
+pkgname=archlan-lightdm-webkit2-theme
+pkgver=1.0
+pkgrel=1
+pkgdesc="Default lightdm webkit2 theme for ArchLan"
+url="https://github.com/archlanextra"
+arch=('any')
+license=('GPL3')
+makedepends=()
+depends=('lightdm' 'lightdm-webkit2-greeter')
+conflicts=()
+groups=(archlan-lightdm-webkit2-themes)
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+prepare() {
+	cp -af ../files/. ${srcdir}
+}
+
+package() {
+	(find archlan -type f -exec install -Dm 644 "{}" "$pkgdir/usr/share/lightdm-webkit/themes/{}" \;)
+}
