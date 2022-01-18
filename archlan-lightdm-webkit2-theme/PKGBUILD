@@ -6,13 +6,13 @@
 #    By: Lanhild <archlan@protonmail.com>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/12 11:18:17 by Lanhild           #+#    #+#              #
-#    Updated: 2022/01/12 11:19:20 by Lanhild          ###   ########.fr        #
+#    Updated: 2022/01/18 18:31:14 by Lanhild          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 pkgname=archlan-lightdm-webkit2-theme
 pkgver=1.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Default lightdm webkit2 theme for ArchLan"
 url="https://github.com/archlanextra"
 arch=('any')
