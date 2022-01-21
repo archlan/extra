@@ -6,7 +6,7 @@
 #    By: Lanhild <archlan@protonmail.com>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/08 19:37:06 by Lanhild           #+#    #+#              #
-#    Updated: 2022/01/08 19:37:07 by Lanhild          ###   ########.fr        #
+#    Updated: 2022/01/20 19:01:30 by Lanhild          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 
 pkgname=archlan-plymouth-theme
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Default plymouth theme for ArchLan"
 url="https://github.com/archlan/extra"
 arch=('any')
@@ -22,7 +22,7 @@ license=('GPL3')
 makedepends=()
 depends=('plymouth')
 conflicts=()
-groups=(archlan-plymouth-themes)
+groups=('archlan-plymouth-themes')
 provides=("${pkgname}")
 options=(!strip !emptydirs)
 
